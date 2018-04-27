@@ -1,12 +1,13 @@
-import _$ from 'jquery';
+import chai, { expect } from 'chai';
+
+import { Provider } from 'react-redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
-import jsdom from 'jsdom';
-import chai, { expect } from 'chai';
+import _$ from 'jquery';
 import chaiJquery from 'chai-jquery';
-import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import jsdom from 'jsdom';
 import reducers from '../src/reducers';
 
 global.document = jsdom.jsdom('<!doctype html><html><body></body></html>');
